@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eef0f2;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sitelogo {
+    width: fit-content;
+    margin: 1em;
+}
+
+.sitelogo img {
+    max-height: 3em;
+}
+
+.sitelogo a {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.sitelogo a:hover {
+    opacity: 60%;
+    transition: 0.5s;
+}
+
+.navlinks {
+    display: flex;
+    width: 60%;
+    padding-top: 2em;
+    justify-content: space-around;
+}
+
+.navlinks a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #152779;
+    font-weight: 700;
+    border: none;
+    transition: 0.2s;
+    height: 100%;
+}
+
+.navlinks a:hover {
+    border-bottom: solid 5px #152779;
+    transition: 0.2s;
+}
+
+.dropmenu {
+    display: none;
+    position: absolute;
+    background-color: #152779;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+    position: absolute;
+}
+
+.dropmenu a {
+    float: none;
+    color: #152779;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropmenu a:hover {
+    background-color: #eef0f2;
+}
+
+.dropdown:hover .dropmenu {
+    display: block;
+}
