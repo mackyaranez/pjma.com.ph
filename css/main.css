@@ -12,10 +12,10 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    position: fixed;
     z-index: 1;
     width: 100%;
     overflow: hidden;
+    position: fixed;
 }
 
 .sitelogo {
@@ -51,7 +51,7 @@ body {
     font-weight: 700;
     border: none;
     transition: 0.2s;
-    height: 100%;
+    text-align: center;
 }
 
 .navlinks a:hover {
@@ -59,27 +59,40 @@ body {
     transition: 0.2s;
 }
 
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown a {
+    padding-bottom: 1.7em;
+    margin: 0;
+}
+
 .dropmenu {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #152779;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 3;
-    position: absolute;
+    z-index: 2;
+    margin-top: 2em;
 }
 
 .dropmenu a {
     float: none;
-    color: #152779;
+    color: #fff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
+    font-weight: 400;
 }
 
 .dropmenu a:hover {
     background-color: #eef0f2;
+    color: #152779;
+    border: none !important;
 }
 
 .dropdown:hover .dropmenu {
