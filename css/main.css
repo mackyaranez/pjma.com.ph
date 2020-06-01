@@ -6,6 +6,40 @@
 
 body {
     background-color: #eef0f2;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #152779;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    letter-spacing: 5px;    
+}
+
+h4 {
+    font-weight: 400;
+}
+
+button {
+    color: #fff;
+    background-color: #152779;
+    border-radius: 0;
+    border: solid 2px #152779;
+    transition: 0.5s;
+    padding: 1em 2em;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #152779;
+    background-color: #fff;
+    transition: 0.5s;
 }
 
 #navbar {
@@ -97,4 +131,200 @@ body {
 
 .dropdown:hover .dropmenu {
     display: block;
+}
+
+#wrapper {
+    padding-top: 5em;
+    max-width: 100%;
+}
+
+.masthead {
+    max-width: 100%;
+    background-image: url('/images/default-masthead.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    max-width: 600px;
+    margin-left: 45%;
+    padding: 15em 5em;
+}
+
+.caption {
+    margin-top: 1em;
+}
+
+.header h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left !important;
+    letter-spacing: 0 !important;
+}
+
+.header p {
+    color: #fff;
+    font-size: smaller;
+}
+
+.header a {
+    font-size: smaller;
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+.header a:hover {
+    text-decoration: none;
+}
+
+.news {
+    max-width: 100%;
+    margin: 3em 3em;
+    text-align: center;
+}
+
+.section {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
+.section h1 {
+    text-align: center !important;
+}
+
+.section span {
+    height: 1px;
+    width: 100%;
+    background-color: #2f2f2f;
+    margin: 20px 0px;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+.card {
+    max-width: 300px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.container {
+    padding: 1em 1.5em;
+}
+
+.container h3 {
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+.container a h3, a {
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.container a:hover h3 {
+    color: #2581b8;
+    transition: 0.5s;
+}
+
+.permalinks {
+    font-size: smaller;
+    color: #6f6f6f;
+    text-align: center;
+}
+
+.subscribe {
+    width: 100%;
+    background-image: url('/images/neb-1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 2em 3em;
+}
+
+.subscribe h1, .subscribe h4 {
+    color: #fff;
+}
+
+#rss {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rss input {
+    padding: 1em 1.5em;
+    width: 350px;
+    border: solid 1px #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#rss button {
+    border: none;
+    border-radius: 0;
+    padding: 1.15em 2em 1.05em 2em;
+    background-color: #152779;
+    border: solid 1px #fff;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+    margin: 1.5em 0em;
+}
+
+#rss button:hover {
+    transition: 0.5s;
+    color: #152779;
+    background-color: #fff;
+}
+
+.events {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 3em 0em;
+    justify-content: center;
+}
+
+.events h1 {
+    padding: 2em 1em;
+}
+
+.card-wrapper-horizontal {
+    width: 600px;
+    display:grid;
+    grid-template-columns: 200px 400px;
+    background-color: #fff;
+    height: fit-content;
+    transition: .5s;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-wrapper-horizontal:hover {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.container-horizontal {
+    text-align: center;
 }
