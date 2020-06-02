@@ -140,7 +140,7 @@ button:hover {
 
 .masthead {
     max-width: 100%;
-    background-image: url('/images/default-masthead.JPG');
+    background-image: url('images/default-masthead.JPG');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -251,7 +251,7 @@ button:hover {
 
 .subscribe {
     width: 100%;
-    background-image: url('/images/neb-1.JPG');
+    background-image: url('images/neb-1.JPG');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
